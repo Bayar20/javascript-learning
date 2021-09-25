@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css" media="all">
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/812188155733999680/819923530765434914/cover1.png" alt="logo" />
+        <div class="private">
+            <a href="cart.html">Миний сагс</a>
+            <a href="order.html">Миний захиалга</a>
+        </div>
+        <div class="global">
+            <div>
+                <input type="text" placeholder="Search" id="search" />
+                <div id="search-result">
+                    <!--<div>Хайлт олдсонгүй.</div>
+                    <a>a</a>-->
+                </div>
+            </div>
+            <div>
+                <span id="login-icon"></span>
+                <div class="login-wrapper">
+                    <div>Нэвтрэх</div>
+                    <div>Гарах</div>
+                    <div>Бүртгүүлэх</div>
+                    <a href="./register.html">Mиний мэдээлэл</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container-1-register">
+            <div class="head-greetings flex">
+                <div class="head-greetings-name">
+                    <p>Сайн байна уу</p>
+                    <p class="user-email"></p>
+                </div>
+                <button class="logout-button">Гарах</button>
+            </div>
+            <div class="location">
+                <a href="#" class="location-button myacc">Миний бүртгэл</a>
+                <a href="#" class="location-button sitems">Миний түүх</a>
+                <a href="#" class="location-button orders">Миний захиалга</a>
+            </div>
+            <h2>Миний бүртгэл</h2>
+            <div class="account-details">
+                <div class="label">
+                    <p>Овог</p>
+                    <input type="text" id="ovog">
+                </div>
+                <div class="label">
+                    <p>Нэр</p>
+                    <input type="text" id="ner">
+                </div>
+                <div class="label user-email">
+                    <p>И-мэйл</p>
+                    <strong><p id="email" style="opacity: 100%;"></p></strong>
+                </div>
+
+                <div class="label">
+                    <p>Хот</p>
+                    <select class="hot">
+                        <option disabled>Хотоо сонгоно уу</option>
+                        <option value="Улаанбаатар">Улаанбаатар</option>
+                        <option value="Дархан">Дархан</option>
+                        <option value="Эрдэнэт">Эрдэнэт</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <p>Хаяг</p>
+                    <input type="text" id="hayag">
+                </div>
+                <button id="save-profile">Хадгалах</button>
+                <div class="label">
+                    <p>Нууц үг</p>
+                    <input type="password" id="changepass">
+                </div>
+                <button class="change-password">Нууц үг солих</button>
+            </div>
+            <hr>
+            <button class="delete-account-button">Бүртгэлээ устгах</button>
+            <hr>
+        </div>
+        <div class="container-2">
+            <div class="greetings flex">
+                <div class="greetings-name">
+                    <p></p>
+                    <p class="user-email"></p>
+                </div>
+                <button class="logout-button">Гарах</button>
+            </div>
+            <hr>
+            <div class="menu">
+                <p class="menu-button myacc"><a href="../html/register.html" style="text-decoration: none;">Миний бүртгэл</a></p>
+                <p class="menu-button sitems"><a href="../html/order.html" style="text-decoration: none;">Миний түүх</a></p>
+                <p class="menu-button orders"><a href="../html/cart.html" style="text-decoration: none;">Миний захиалга</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="tl-footer">
+        <div class="tl-footer-container">
+            <div class="tl-footer-left-side">
+                <div class="tl-footer-info">
+                    <h2>Contact info</h2>
+                    <div class="tl-break-line"></div>
+                    <div class="tl-info-logo">
+                        <div class="tl-logo"></div>
+                        <div class="tl-call">
+                            <p class="tl-call-number">
+                                <a href="Утас :*********"> Утас: 7507-7500</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-footer-info">
+                    <h2><a href="./aboutus.html">Бидний тухай</a></h2>
+                    <div class="tl-break-line"></div>
+                    <h2><a href="./faq.html">Түгээмэл асуултууд</a></h2>
+                    <div class="tl-break-line"></div>
+                </div>
+            </div>
+            <div class="tl-footer-right-side">
+                <h1>Ногоон орчин бүрдүүлэхэд хувь нэмэр оруулж буй танд баярлалаа !</h1>
+                <div class="tl-green"></div>
+            </div>
+        </div>
+        <div class="tl-end">
+            <p class="tl-end-text">Design by Treely 2021.</p>
+        </div>
+    </div>
+    <div class="tl-footer-responsive">
+        <div class="tl-foot-resp-contain">
+            <!-- <div class="tl-responsive-header">
+                <h1>Join The Tree Center Newsletter For Goodies</h1>
+            </div> -->
+            <div class="tl-responsive-logo">
+                <div class="tl-responsive-small-logo"></div>
+            </div>
+            <button class="tl-responsive-phone-number">Утас : 7507-7500</button>
+            <div class="tl-responsive-foot">
+                <div class="tl-info-contactus"><a href="aboutus.html">Бидний тухай</a></div>
+                <div class="tl-info-information"><a href="Түгээмэл асуултууд">Түгээмэл асуултууд --></a></div>
+            </div>
+        </div>
+        <div class="tl-end">
+            <p class="tl-end-text">Design by Treely 2021.</p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

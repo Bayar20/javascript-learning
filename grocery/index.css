@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Aleo', serif;
+}
+
+:root {
+    --grey: #E2E2E2;
+    --green: #53B175;
+    --white: #fff;
+    --darkGrey: #4C4F4D;
+}
+
+body {
+    box-sizing: border-box;
+    min-width: 700px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* 1px wider than Lion. */
+    /* This is more usable for users trying to click it. */
+    background-color: rgba(0,0,0,0);
+    -webkit-border-radius: 100px;
+  }
+  /* hover effect for both scrollbar area, and scrollbar 'thumb' */
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+  
+  /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+  ::-webkit-scrollbar-thumb:vertical {
+    /* This is the EXACT color of Mac OS scrollbars. 
+       Yes, I pulled out digital color meter */
+    background: rgba(0,0,0,0.5);
+    -webkit-border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+    -webkit-border-radius: 100px;
+  }
+
+.flex {display: flex;}
+.flex-1 {flex: 1;}
+.flex-2 {flex: 2;}
+.flex-3 {flex: 3;}
+.flex-4 {flex: 4;}
+
+.main {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.statusBar {
+    margin: 20px auto;
+    line-height: 20px;
+    font-size: 25px;
+    color: black;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.time {
+    margin-left: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: baseline;
+}
+
+.icons > img {
+    margin: 0 10px;
+    width: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: var(--darkGrey);
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.search {
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+    height: 60px;
+    border-radius: 20px;
+    background-color: var(--grey);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;    
+}
+
+.search::placeholder {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.exclusivOffer {
+    width: 100%;
+    height: 150px;
+    background-image: url('assets/Mask\ Group.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.exclusivOffer h2 {
+    padding-top: 50px;
+    margin-left: 320px;
+    font-size: 40px;
+}
+
+.exclusivOffer h3 {
+    color: var(--green);
+    margin-left: 350px;
+    font-size: 30px;
+}
+
+.img1 {
+    position: absolute;
+    width: 25%;    
+}
+
+.img2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;  
+}
+
+.img3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;  
+}
+
+.offer > h1 {
+    margin: 30px 0;   
+}
+
+.scroll {
+    width: 100%;
+    overflow: scroll;
+}
+
+.card {
+    height: 350px;
+    width: 280px;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+.card > img {
+    width: 150px;    
+}
+
+#num {
+    color: var(--darkGrey);
+}
+
+.Price {
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 11px;
+}
+
+.plus {
+    margin-left: 20px;
+    border: none;
+    background-color: var(--green);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Cart */
+
+.cart {
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cart .title {
+    font-weight: 700;
+}
+
+.itemContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.Product {
+    width: 150px;
+    height: 150px;
+}
+
+.ProductName {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.minus {
+    margin-left: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    color: var(--darkGrey);
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.counter {
+    flex-direction: column;
+}
+
+.counterContainer {
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.pricer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.remove {
+    color: var(--grey);
+}
+
+.btn {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 20px;
+    font-size: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    line-height: 45px;
+    margin: 30px 0;
+}
+
+.orderPro {
+    margin-top: 20px;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid var(--grey);
+    margin: 10px 0;
+}
+
+.dateStatus h3, .createdDate h3 {
+    font-size: 15px;
+}
+
+.dateStatus p, .createdDate p {
+    color: var(--darkGrey);
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.gap {
+    margin: 50px 0;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>GROCERY APP</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="main">
+    <div class="statusBar">
+      <span class="time"></span>
+      <span class ="icons">
+        <img class="signal" src="assets/Cellular Connection.svg" alt="signal">
+        <img class="wifi" src="assets/Wifi.svg" alt="wifi">        
+        <img class="battery" src="assets/Battery.svg" alt="battery">
+
+      </span>
+    </div>
+    <div class="header">📍 Nest Students Grocery App</div>
+    <input class="search" placeholder="🔎 Search Store"></input>
+    <div class="exclusivOffer">
+      <img class="img1" src="assets/2771 1.svg" alt="Vegetables">
+      <img class="img2" src="assets/3698 1.svg" alt="Vegetables">
+      <img class="img3" src="assets/pngfuel 1.svg" alt="Vegetables">
+      <h2>Fresh Vegetables</h2>
+      <h3>Get Up To 40% OFF</h3>
+    </div>
+    <div class="offer">
+      <h1>Our Products</h1>
+      <div class="scroll flex" id="products-container">
+        
+    </div>
+    <div class="cart flex">
+      <h1 class="title flex-1">Cart</h1>
+      <div class="item flex flex-2">
+        <div class="itemContainer flex flex-1">
+          <img class="Product" src="assets/pepper.svg" alt="Pepper">
+        </div>        
+        <div class="counter flex flex-1">
+          <div class="ProductName flex flex-1">
+            <h2>Bell Pepper Red</h2>
+            <p id='num'>1kg, Price</p>
+          </div>
+          <div class="counterContainer flex flex-1">
+            <span class="flex minus">-</span>
+            <h2>1</h2>
+            <span class="flex plus">+</span>
+          </div>
+        </div>
+        <div class="pricer flex flex-1">
+          <span class="remove">X</span>
+          <span class="price">$4.99</span>
+        </div>
+      </div>
+      <div class="line"></div>  
+            <div class="item flex flex-2">
+        <div class="itemContainer flex flex-1">
+          <img class="Product" src="assets/eggs.svg" alt="Eggs">
+        </div>        
+        <div class="counter flex flex-1">
+          <div class="ProductName flex flex-1">
+            <h2>Bell Pepper Red</h2>
+            <p id='num'>1kg, Price</p>
+          </div>
+          <div class="counterContainer flex flex-1">
+            <span class="flex minus">-</span>
+            <h2>1</h2>
+            <span class="flex plus">+</span>
+          </div>
+        </div>
+        <div class="pricer flex flex-1">
+          <span class="remove">X</span>
+          <span class="price">$4.99</span>
+        </div>
+      </div>      
+    </div>
+    <button class="btn flex-2">Go to Checkout</button> 
+      <div class="offer">
+        <h1>My Orders</h1>
+        <div class="scroll flex">
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/apple.svg" alt="apple">
+            <div class="Text flex-1">
+              <h3>Red Apple</h3>
+              <p id='num'>1kg, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="orderPro">
+          <div class="dateStatus flex">
+            <h3>Order Status:</h3>
+            <p>order added</p>
+          </div>
+          <div class="createdDate flex">
+            <h3>Created date:</h3>
+            <p>2020-11-20 14:00</p>
+          </div>          
+        </div>
+        <div class="line"></div>
+        <div class="gap"></div>
+        <div class="scroll flex">
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/apple.svg" alt="apple">
+            <div class="Text flex-1">
+              <h3>Red Apple</h3>
+              <p id='num'>1kg, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+          <div class="card flex">
+            <img class="flex-2" src="assets/banana.svg" alt="banana">
+            <div class="Text flex-1">
+              <h3>Organic Bananas</h3>
+              <p id='num'>7pcs, Price</p>
+            </div>
+            <div class="flex Price flex-1">
+              <h1>$4.99</h1>
+              <span class="flex plus">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="orderPro">
+          <div class="dateStatus flex">
+            <h3>Order Status:</h3>
+            <p>order added</p>
+          </div>
+          <div class="createdDate flex">
+            <h3>Created date:</h3>
+            <p>2020-11-20 14:00</p>
+          </div>          
+        </div>
+        <div class="line"></div>
+        <div class="gap"></div>       
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+  
+  <script>  
+    var firebaseConfig = {
+    apiKey: "AIzaSyDeOil-os9C-tXBj-iO-WVisa7l8ZO8lQs",
+    authDomain: "groceryapp-ed6bf.firebaseapp.com",
+    projectId: "groceryapp-ed6bf",
+    storageBucket: "groceryapp-ed6bf.appspot.com",
+    messagingSenderId: "112217153761",
+    appId: "1:112217153761:web:34e2d2c5c208b2389cd7a0"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./controller.js"></script>
+  <script src="./view.js"></script>
+</body></html>

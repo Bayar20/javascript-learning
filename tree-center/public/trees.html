@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/trees.css">
+        <link rel="stylesheet" href="../css/header.css" type="text/css" media="all">
+        <script src="https://kit.fontawesome.com/9208650dab.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img src="https://cdn.discordapp.com/attachments/812188155733999680/819923530765434914/cover1.png" alt="logo" />
+            <div class="private">
+                <a href="cart.html">Миний сагс</a>
+                <a href="order.html">Миний захиалга</a>
+            </div>
+            <div class="global">
+                <div>
+                    <input type="text" placeholder="Search" id="search" />
+                    <div id="search-result">
+                        <!--<div>Хайлт олдсонгүй.</div>
+                    <a>a</a>-->
+                    </div>
+                </div>
+                <div>
+                    <span id="login-icon"></span>
+                    <div class="login-wrapper">
+                        <div>Нэвтрэх</div>
+                        <div>Гарах</div>
+                        <div>Бүртгүүлэх</div>
+                        <a href="./register.html">Mиний мэдээлэл</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Main-->
+        <main>
+            <div class="location">
+                <div class="flex align-center">
+                    <a href="../index.html">Нүүр хуудас</a>
+                </div>
+                <span>></span>
+                <div class="flex align-center" id="category"></div>
+            </div>
+            <div class="section1">
+                <h1 style="text-align: center;font-size: 50px;">...Treely...</h1>
+                <div class="ts-sort">
+                    <select class="default-sorting">
+                        <option>Энгийн</option>
+                        <option>Үнэ өсөхөөр</option>
+                        <option>Үнэ буурахаар</option>
+                        <option>Нэрээр</option>
+                        <option>Үнэлгээгээр</option>
+                    </select>
+                </div>
+                <div class="ts-products">
+                    <!--<div class="ts-product">
+                    <div class="product-button"></div>
+                    <label>$59.50</label>
+                </div>-->
+                </div>
+            </div>
+
+            <div class="ts-info">
+                <!-- <div class="info-content">
+                <h1 class="ts-info-title">Crape Myrtles</h1>
+                <p class="info-txt">Crape Myrtles (sometimes spelled Crepe Myrtles) are shrubs or small trees that are widely grown in warmer regions for their large, dramatic and colorful flowers which are produced all summer. Their bright colors are bold in the brightest sunlight and these rapid-growing plants will quickly bring your garden alive. They are easy to grow and some can grow up to 5 feet a year, so unlike some other plants that need patience to be seen at their best, Crape Myrtle trees will rapidly grow into substantial plants that will give your new garden a feel of maturity.</p>
+            </div> -->
+            </div>
+        </main>
+        <div class="tl-footer">
+            <div class="tl-footer-container">
+                <div class="tl-footer-left-side">
+                    <div class="tl-footer-info">
+                        <h2>Бидэнтэй холбогдох</h2>
+                        <div class="tl-break-line"></div>
+                        <div class="tl-info-logo">
+                            <div class="tl-logo"></div>
+                            <div class="tl-call">
+                                <p class="tl-call-number">
+                                    <a href="Утас :*********"> Утас: 7507-7500</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tl-footer-info">
+                        <h2><a href="./aboutus.html">Бидний тухай</a></h2>
+                        <div class="tl-break-line"></div>
+                        <h2><a href="./faq.html">Түгээмэл асуултууд</a></h2>
+                        <div class="tl-break-line"></div>
+                    </div>
+                </div>
+                <div class="tl-footer-right-side">
+                    <h1>Ногоон орчин бүрдүүлэхэд хувь нэмэр оруулж буй танд баярлалаа !</h1>
+                    <div class="tl-green"></div>
+                </div>
+            </div>
+            <div class="tl-end">
+                <p class="tl-end-text">Design by Treely 2021.</p>
+            </div>
+        </div>
+        <div class="tl-footer-responsive">
+            <div class="tl-foot-resp-contain">
+                <!-- <div class="tl-responsive-header">
+                    <h1>Join The Tree Center Newsletter For Goodies</h1>
+                </div> -->
+                <div class="tl-responsive-logo">
+                    <div class="tl-responsive-small-logo"></div>
+                </div>
+                <button class="tl-responsive-phone-number">Утас : 7507-7500</button>
+                <div class="tl-responsive-foot">
+                    <div class="tl-info-contactus"><a href="aboutus.html">Бидний тухай</a></div>
+                    <div class="tl-info-information"><a href="Түгээмэл асуултууд">Түгээмэл асуултууд --></a></div>
+                </div>
+            </div>
+            <div class="tl-end">
+                <p class="tl-end-text">Design by Treely 2021.</p>
+            </div>
+        </div>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+        <script src="../js/base.js"></script>
+        <script src="../js/index.js"></script>
+        <script src="../js/header.js"></script>
+    </body>
+</html>

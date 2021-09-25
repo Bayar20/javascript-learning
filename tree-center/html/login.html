@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREELY</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="login-page">
+    <div class="header-bar">
+        <div class="bonus"></div>
+        <div class="head flex space-between">
+            <a href="../html/index.html"><img src="../assets/teamlogo.png" alt="logo" style="width: 100px;"></a>
+            <img src="../assets/logosmall.png" alt="logo" width="100px" height="100px" style="border-radius: 50px;">
+            <img src="../assets/logosmall.png" alt="logo" width="100px" height="100px" style="border-radius: 50px;">
+        </div>
+    </div>
+    <hr style="opacity: 50%;">
+    <div class="login">
+        <h1>Нэвтрэх</h1>
+        <p>Бүртгэлгүй бол бүртгүүлэх дарж бүртгүүлнэ үү</p>
+        <div class="email-password">
+            <input type="email" placeholder="И-мэйл" id="email">
+            <input type="password" placeholder="Нууц үг" id="password">
+        </div>
+        <br>
+        <p class="email-wrong" style="display: none; color: red;">И-мэйл эсвэл нууц үг буруу байна</p>
+        <br>
+        <div class="login-buttons">
+            <button class="login-button">Нэвтрэх</button>
+            <button class="register-button">Бүртгүүлэх</button>
+            <button class="reset-submit" style="display: none;">Сэргээх</button>
+        </div>
+        <br>
+        <p class="reset-password">Нууц үг сэргээх</p>
+        <p class="go-back" style="display: none;">Буцах</p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

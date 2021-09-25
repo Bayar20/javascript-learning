@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    font-family: 'Roboto', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.location {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 46px;
+    padding: 0px 25px 0px;
+    display: flex;
+    align-items: center;
+}
+.location div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px 12.8px;
+    border-bottom: 2px solid #f5f3f0;
+}
+.location div a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d4454;
+}
+.location div:nth-child(1) {
+    margin-left: unset;
+}
+.location div:hover {
+    border-bottom: 2px solid #1f8fc5;
+}
+.location span {
+    color: #C9C9C9;
+}
+
+
+.hi-title{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: BOLD;
+    color: rgb(56, 107, 56);
+    font-size: 4vh;
+
+}
+
+/*Team*/
+.meet-title{
+    text-align:center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.members{
+    display: flex;
+    justify-content: space-around;
+}
+.member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 18%;
+    font-size: 24px;
+}
+.member-pic{
+    display: flex;
+    padding-top:30px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    width: 12.25rem;
+    height: 12.25rem;
+}
+
+.team .teamlogo {
+    background: url(../assets/image-about/GuardiansOfTheForest.jpg);
+    width: auto;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 40px;
+    background-position: center;
+}
+/*About-Us*/
+.about-section{
+    display: flex;
+    padding-top:60px;
+    padding-bottom: 50px;
+    padding-left: 9.375rem;
+    align-items: center;
+    justify-content: center;
+}
+.text-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4rem;
+    width: 30%;
+    line-height: 2rem;
+}
+.text-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.text-title::before{
+    display: inline-block;
+    content: ' ';
+    background-image: url('./mission-icon.svg');
+    background-size: 1.75rem 1.75rem;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+.pic-part{
+    height: 30rem;
+    width: 26rem;
+}
+.text-part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    width: 30%;
+    line-height:2rem ;
+}
+/*Contact Us*/
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25rem;
+}
+.icon{
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+#teacher-1 {
+    margin-left: 25vw;
+}
+
+#teacher-2 {
+    margin-right: 25vw;
+}
+
+#rocket {
+    position: 30%;
+}

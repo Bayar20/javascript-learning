@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+* {
+    color: #132533;
+    background-color: unset;
+}
+
+a {
+    text-decoration: none;
+}
+/* HEADER */
+
+.tl-header {
+    position: relative;
+    z-index: 1;
+}
+
+.tl-header-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-size: contain;
+    background-color: #151844;
+}
+
+
+/* LEFT-SIDE */
+
+.tl-left-side {
+    height: 100px;
+    flex: 2;
+    margin-left: 20px;
+    display: flex;
+}
+
+
+/* DROPDOWN EHNII LINK */
+
+.tl-dropdown-1 {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.tl-dropdown-link-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tl-link-1 {
+    color: white;
+}
+
+.tl-contain-1 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: hidden;
+    bottom: 100%;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.3s;
+    padding-top: 200px;
+}
+
+.tl-contain-part {
+    flex: 1;
+    height: 100%;
+}
+
+.tl-dropdown-1:hover .tl-contain-1 {
+    display: flex;
+    bottom: -200px;
+}
+
+.tl-dropdown-link-1:hover .tl-line-1 {
+    display: block;
+}
+
+.tl-line-1 {
+    bottom: 30px;
+    left: 25px;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+.tl-text-head {
+    padding-left: 20px;
+    font-size: 20px;
+    color: black;
+    margin-left: 50px;
+}
+
+.tl-text {
+    color: black;
+    margin: 20px;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+
+/* DROPDOWN SECOND LINK */
+
+.tl-dropdown-2 {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.tl-dropdown-link-2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tl-contain-2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: hidden;
+    bottom: 100%;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.3s;
+    padding-top: 200px;
+}
+
+.tl-dropdown-2:hover .tl-contain-2 {
+    display: flex;
+    bottom: -180%;
+}
+
+.tl-line-2 {
+    bottom: 30px;
+    left: 165px;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+
+/* DROPDOWN TIRTH LINK */
+
+.tl-dropdown-3 {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.tl-dropdown-link-3 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.tl-contain-3 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: hidden;
+    bottom: 100px;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.tl-dropdown-3:hover .tl-contain-3 {
+    display: flex;
+    bottom: -250px;
+}
+
+.tl-line-3 {
+    bottom: 30px;
+    left: 290px;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+.tl-text-3 {
+    margin-top: 20px;
+    color: black;
+    margin: 50px;
+}
+
+.tl-contain-part-pic {
+    flex: 2;
+    background-color: #a4b4a9;
+    background-image: url("https://www.thetreecenter.com/c/themes/ttc/assets/img/bg-homepage-promise-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*                                 LEFT SIDE RESPONSIVE                     */
+
+.tl-rp-header {
+    height: 100px;
+    width: 980px;
+    background-color: black;
+    position: fixed;
+    left: -20px;
+    z-index: -1;
+    display: none;
+}
+
+.tl-rp-main-container {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    z-index: 2;
+    width: 100%;
+    top: 100px;
+    background-color: white;
+    padding-left: 20px;
+    left: -20px;
+    border-radius: 10px;
+    box-shadow: -1px 1px black;
+    justify-content: space-between;
+}
+
+.tl-rp-drp-links {
+    margin-right: 20px;
+}
+
+.clear {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.tl-rp-drp-link-1 {
+    height: 80px;
+    width: 320px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #f6f6f6;
+    justify-content: space-between;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.tl-rp-drp-link-2 {
+    height: 80px;
+    width: 320px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #f6f6f6;
+    justify-content: space-between;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.tl-rp-drp-pic-1 {
+    height: 70px;
+    width: 70px;
+    border: solid 1px black;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-image: url("https://www.thetreecenter.com/c/themes/ttc/assets/img/main-nav-trees@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tl-rp-drp-pic-2 {
+    height: 70px;
+    width: 70px;
+    border: solid 1px black;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-image: url("https://www.thetreecenter.com/c/themes/ttc/assets/img/main-nav-plants@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tl-rp-drp-pic-3 {
+    height: 70px;
+    width: 70px;
+    border: solid 1px black;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-image: url("https://www.thetreecenter.com/c/themes/ttc/assets/img/main-nav-learn@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tl-rp-text-main-container {
+    background-color: #f6f6f6;
+}
+
+.tl-rp-text-contain {
+    height: 100%;
+    width: 85%;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+
+.tl-rp-text-header {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tl-rp-text {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #3396c8;
+}
+
+
+/* MIDDLE SIDE */
+
+.tl-middle {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tl-non-responsive-mid {
+    margin-left: 20px;
+    width: 100%;
+    height: 80%;
+    background-image: url("../assets/teamlogo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* RIGHT SIDE */
+
+.tl-right-side {
+    height: 100%;
+    flex: 2;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.tl-buttons {
+    height: 30px;
+    width: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.search-contain {
+    display: flex;
+    margin-left: 100px;
+    position: relative;
+    flex: 1;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.tl-buttons {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.tl-search {
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-image: url("../assets/loupe.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tl-search-input {
+    width: 100%;
+    height: 30px;
+    display: none;
+}
+
+.result-contain {
+    width: 97%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.result {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    padding-left: 10px;
+    border: solid 1px#132634;
+    top: -100px;
+    z-index: 3;
+    display: flex;
+}
+
+.clear-result {
+    min-width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 185px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.text-container {
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.result-icon {
+    min-width: 20px;
+    min-height: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-image: url("./marketing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tl-log-in-contain {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    right: -20px;
+    top: 60px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.3s;
+    display: none;
+}
+
+.tl-login {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 20px;
+    background-color: #151844;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.tl-log-in {
+    height: 20px;
+    width: 20px;
+    background-image: url("../assets/bag.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tl-signup {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #151844;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.tl-signout {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #151844;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.tl-user {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    right: -20px;
+    top: 60px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.3s;
+    display: none;
+}
+
+.tl-profile {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #151844;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.tl-signout1 {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #151844;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+/* My orders */
+
+.order-main {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+
+.order-date {
+    margin-top: 15px;
+}
+
+.brk {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.order-contain {
+    width: 100%;
+    display: flex;
+    height: 85%;
+}
+
+.order-right {
+    flex: 1;
+    height: 100%;
+}
+
+.right-img {
+    height: 100%;
+    width: 200px;
+    margin: auto;
+    background-image: url('https://www.thetreecenter.com/c/uploads/royal-purple-smoke-tree-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.order-left {
+    flex: 1;
+    height: 100%;
+}
+
+table {
+    margin-top: 50px;
+}
+
+tr,
+th {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-width: 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9B9B9B;
+    text-align: start;
+}
+
+.first {
+    font-size: 20px;
+}
+
+tr,
+td {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    vertical-align: top;
+    color: black;
+}
+
+
+/* FOOTER */
+
+.tl-footer {
+    background-color: #f6f6f6;
+}
+
+.tl-footer-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.tl-footer-left-side {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.tl-footer-right-side {
+    flex: 2;
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tl-green {
+    width: 150px;
+    height: 150px;
+    background-image: url('./ebba-thoresson-O9vsfZq8UWw-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.tl-footer-info {
+    flex: 1;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+}
+
+.tl-info-logo {
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tl-info-empty {
+    height: 30%;
+    width: 100%;
+}
+
+.tl-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("../assets/teamlogo_small.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.tl-call {
+    width: 100%;
+    height: 50%;
+}
+
+.tl-call-number {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #132634;
+    margin-top: 20px;
+}
+
+.tl-break-line {
+    background-color: black;
+    width: 80%;
+    height: 1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tl-info-text {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #132634;
+}
+
+.tl-rigthside-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tl-email {
+    width: 60%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.tl-goto-email {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 50px;
+    outline: none;
+}
+
+h1 {
+    color: #132634;
+    font-size: 25px;
+}
+
+.tl-end {
+    background-color: #132634;
+    height: 50px;
+    width: 100%;
+    background-size: contain;
+    background-color: #151844;
+}
+
+.tl-end-text {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.tl-navi-bar-responsive {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    outline: none;
+    border: none;
+}
+
+
+/* FOOTER RESPONSIVE*/
+
+.tl-footer-responsive {
+    display: none;
+    width: 100%;
+    height: 600px;
+    background-color: #f6f6f6;
+}
+
+.tl-foot-resp-contain {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.tl-responsive-header {
+    padding-top: 100px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.tl-rep-email-contain {
+    display: flex;
+}
+
+.tl-email-responsive {
+    width: 70%;
+    height: 50px;
+    margin-top: 40px;
+    padding-left: 20px;
+    margin-left: 40px;
+}
+
+.tl-responsive-logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tl-button-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-responsive-small-logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("../assets/teamlogo_small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.tl-responsive-phone-number {
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+    background-color: #1e8fc5;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.tl-responsive-foot {
+    height: 200px;
+}
+
+.tl-info-contactus {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tl-info-information {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 960px) {
+    /* header */
+    .tl-header-container {
+        display: flex;
+    }
+    .tl-dropdown-1,
+    .tl-dropdown-2,
+    .tl-dropdown-3 {
+        display: none;
+    }
+    /* hamburger-bar */
+    .tl-navi-bar-responsive {
+        display: block;
+        background-color: #151844;
+    }
+    .tl-hamburger-1 {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        top: 20px;
+    }
+    .tl-hamburger-2 {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        top: 12px;
+    }
+    .tl-hamburger-3 {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        top: 4px;
+    }
+    .tl-rp-header {
+        display: block;
+    }
+    /* middle */
+    .tl-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tl-non-responsive-mid {
+        display: none;
+    }
+    .tl-responsive-mid {
+        width: 70px;
+        height: 70px;
+        background-image: url("../assets/teamlogo_small.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+    /* footer */
+    .tl-footer-responsive {
+        display: block;
+    }
+    .tl-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .tl-rp-header {
+        display: none;
+    }
+    .tl-rp-main-container {
+        display: none;
+    }
+}
+
+/*HEADER*/
+header {
+    height: 100px;
+    /*background-image: url("https://www.thetreecenter.com/c/themes/ttc/assets/img/bg-header@2x.png");
+    background-size: contain;*/
+    background-color: #132533;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+    header img {
+        width: 240px;
+        position: absolute;
+        left: calc(50% - 100px); 
+    }
+
+    header div:first-child.private {
+        visibility: hidden;
+    }
+
+        header .private a {
+            padding: 0 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+    header div:last-child {
+        display: flex;
+    }
+
+        header div:last-child div:first-child {
+            margin-left: 20px;
+            position: relative;
+        }
+
+            header div:last-child div:first-child input {
+                width: 180px;
+                height: 20px;
+                padding-left: 25px;
+                background-color: white;
+                background-image: url(../assets/search.svg);
+                background-size: 14px;
+                background-position: left;
+                background-position-x: 5px;
+                border: none;
+                border-radius: 40px;
+                background-repeat: no-repeat;
+                outline: none;
+            }
+
+            header div:last-child div:first-child #search-result {
+                width: 150px;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                background-color: white;
+                z-index: 10;
+                display: none;
+                flex-direction: column;
+            }
+
+                header div:last-child div:first-child #search-result div, header div:last-child div:first-child #search-result a {
+                    margin-left: unset;
+                    padding: 5px;
+                    width: 100%;
+                    text-align: left;
+                    color: #132533;
+                    font-size: 14px;
+                    font-weight: 300;
+                    overflow: hidden;
+                }
+
+                    header div:last-child div:first-child #search-result.open {
+                        display: flex;
+                    }
+
+        header div:last-child div:last-child {
+            margin: 0 20px;
+            position: relative;
+        }
+
+            header div:last-child div:last-child #login-icon {
+                width: 20px;
+                height: 20px;
+                background-image: url(../assets/bag.svg);
+                background-size: contain;
+            }
+
+                header div:last-child div:last-child #login-icon:hover {
+                    cursor: pointer;
+                }
+
+            header div:last-child div:last-child .login-wrapper {
+                width: 100px;
+                position: absolute;
+                top: 30px;
+                left: -100px;
+                z-index: 100;
+                display: none;
+                flex-direction: column;
+                background-color: white;
+                border-radius: 5px;
+            }
+
+                header div:last-child div:last-child .login-wrapper div, header div:last-child div:last-child .login-wrapper a {
+                    margin: unset;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                    header div:last-child div:last-child .login-wrapper div:hover, header div:last-child div:last-child .login-wrapper a:hover {
+                        background-color: #CCD0D5;
+                        cursor: pointer;
+                    }
+
+                header div:last-child div:last-child .login-wrapper.open {
+                    display: flex;
+                }
+@media only screen and (max-width: 800px) {
+    header img {
+        display: none;
+    }
+
+    header .private a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    header div:last-child div:first-child input {
+        width: 145px;
+    }
+}
